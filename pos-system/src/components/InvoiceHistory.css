@@ -1,0 +1,59 @@
+
+.invoice-history table,
+.receipt table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.invoice-history th,
+.invoice-history td,
+.receipt th,
+.receipt td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.receipt-container {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  max-width: 700px;
+}
+
+.receipt {
+  max-width: 600px;
+}
+
+.receipt-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-receipt,
+  #print-receipt * {
+    visibility: visible;
+  }
+
+  #print-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    border: none;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .receipt-actions {
+    display: none;
+  }
+}
