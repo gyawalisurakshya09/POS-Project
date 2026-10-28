@@ -49,14 +49,4 @@ npm run build
 
 The application uses React components for the user interface, TypeScript types for data structures, and a service layer for checkout operations. IndexedDB stores products, stock movements, invoices, and invoice counters.
 
-## Limitations
 
-- The application has no backend or real payment processing.
-- The Owner/Cashier selector is a demo role switch, not secure authentication.
-- Data is stored locally in the browser.
-
-## Future Improvements
-
-- Implement secure authentication and backend integration.
-- Add automated tests and improve error handling.
-- Deploy the application for online access.
